@@ -1,0 +1,32 @@
+*{margin:0px;
+padding:0px;}
+
+body{
+    background-color: rgb(46, 45, 45);
+}
+.boxwrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+
+}
+.box{
+    margin: 20pt;
+    border-radius: 20pt;
+    width: 150pt;
+    height: 150pt;
+    background-color: black;
+    padding: 10pt;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0);
+    align-items: baseline;
+}
+.box:hover{
+    height: 180pt;
+    width: 180pt;
+    transition: ease-in-out 0.1s;
+}
+.box:not(:hover){
+    transition: ease-in-out 0.5s;
+}
