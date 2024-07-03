@@ -21,21 +21,37 @@
     }
     .wow{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 30vh;
+        font-size: 300px;
     
         background-image: linear-gradient(to right, oklab(36.42% -0.011 -0.14), oklab(57.58% 0.158 0.01));
         color: transparent;
         background-clip: text;
-        filter: blur(30px);
     
     }
-    .wow2{
+    .wow_glow{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 30vh;
+        font-size: 310px;
         
     
         background-image: linear-gradient(to right, oklab(36.42% -0.011 -0.14), oklab(57.58% 0.158 0.01));
         color: transparent;
         background-clip: text;
+
+        filter: blur(30px);
         position: absolute;
+    }
+    .interpretation{
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        color: #dbdff3;
+    }
+    .highlighted_header_text{
+        color: #c1486f;
+        text-shadow: rgba(193,72,110,0.9) 0px 0px 10px;
     }
