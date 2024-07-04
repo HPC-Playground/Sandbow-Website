@@ -1,57 +1,63 @@
-/*
---text: #dbdff3;
---background: #050810;
---primary: #1a3587;
---secondary: #772866;
---accent: #c1486f;
-*/
-
 *{margin:0px;
-    padding:0px;}
-    
-    body{
-        background-color: #050810;
-    }
-    .title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    .wow{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 300px;
-    
-        background-image: linear-gradient(to right, oklab(36.42% -0.011 -0.14), oklab(57.58% 0.158 0.01));
-        color: transparent;
-        background-clip: text;
-    
-    }
-    .wow_glow{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 310px;
-        
-    
-        background-image: linear-gradient(to right, oklab(36.42% -0.011 -0.14), oklab(57.58% 0.158 0.01));
-        color: transparent;
-        background-clip: text;
+    padding:0px;
+}
+:root {
+    --text: #dbdff3;
+    --background: #050810;
+    --primary: #1a3587;
+    --secondary: #772866;
+    --accent: #c1486f;
+}
+body{
+    background-color: var(--background);
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        filter: blur(30px);
-        position: absolute;
-    }
-    .interpretation{
-        position: absolute;
-        top: 100vh;
-        left: 0;
-        width: 100vw;
-        text-align: center;
+    width: 100%;
+    height: 100vh;
+    top: 100vh;
+    left: 0;
+}
+.wow{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300px;
 
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 35px;
-        color: #dbdff3;
-    }
-    .highlighted_header_text{
-        color: #c1486f;
-        text-shadow: rgba(193,72,110,0.9) 0px 0px 10px;
-    }
+    background-image: linear-gradient(to right, oklab(36.42% -0.011 -0.14), oklab(57.58% 0.158 0.01));
+    color: transparent;
+    background-clip: text;
+
+}
+.wow_glow{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 310px;
+
+    background-image: linear-gradient(to right, oklab(36.42% -0.011 -0.14), oklab(57.58% 0.158 0.01));
+    color: transparent;
+    background-clip: text;
+    filter: blur(30px);
+    position: absolute;
+}
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    top: 100vh;
+    left: 0;
+}
+.interpretation{
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: var(--text);
+}
+.highlighted_header_text{
+    color: var(--accent);
+    text-shadow: var(--accent) 0px 0px 10px;
+}
