@@ -1,3 +1,14 @@
+/*
+Headings:
+ - Line height: 1.1 * font-size
+ - Letter spacing: -0.01 * font-size
+
+ Body text:
+ - Line height: 1.3 * font-size
+ - Letter spacing: 0
+
+*/
+
 *{margin:0px;
 padding:0px;
 }
@@ -7,6 +18,9 @@ padding:0px;
     --primary: #1a3587;
     --secondary: #772866;
     --accent: #c1486f;
+    --heading: 3.5rem;
+    --sub-heading: 3rem;
+    --body-text: 1.8rem;
 }
 body{
     background-color: var(--background);

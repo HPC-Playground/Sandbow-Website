@@ -1,15 +1,34 @@
+/*
+Headings:
+ - Line height: 1.1 * font-size
+ - Letter spacing: -0.01 * font-size
+
+ Body text:
+ - Line height: 1.3 * font-size
+ - Letter spacing: 0
+
+*/
+
 *{margin:0px;
     padding:0px;
 }
 :root {
-    --text: #dbdff3;
-    --background: #050810;
-    --primary: #1a3587;
-    --secondary: #772866;
-    --accent: #c1486f;
+    --text-color: #dbdff3;
+    --background-color: #050810;
+    --primary-color: #1a3587;
+    --secondary-color: #772866;
+    --accent-color: #c1486f;
+
+    --heading-size: 3rem;
+    --body-text-size: 1.8rem;
+
+    --heading-line-height: 3.3rem;
+    --body-text-line-height: 2.34rem;
+
+    --heading-letter-spacing: -0.03rem;
 }
 body{
-    background-color: var(--background);
+    background-color: var(--background-color);
 }
 .title{
     display: flex;
@@ -32,18 +51,19 @@ body{
 }
 .wow_glow{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 310px;
+    font-size: 300px;
 
     background-image: linear-gradient(to right, oklab(36.42% -0.011 -0.14), oklab(57.58% 0.158 0.01));
     color: transparent;
     background-clip: text;
-    filter: blur(30px);
+    filter: blur(100px);
     position: absolute;
 }
 .presentation{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column;
 
     width: 100%;
     height: 100vh;
@@ -53,11 +73,27 @@ body{
 .interpretation{
     width: 100%;
     text-align: center;
+
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    color: var(--text);
+    font-size: var(--heading-size);
+    letter-spacing: var(--heading-letter-spacing);
+    line-height: var(--heading-line-height);
+
+    color: var(--text-color);
 }
 .highlighted_header_text{
-    color: var(--accent);
-    text-shadow: var(--accent) 0px 0px 10px;
+    color: var(--accent-color);
+    text-shadow: var(--accent-color) 0px 0px 10px;
+}
+p{
+    width: 800px;
+    margin-top: 3.3rem;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--body-text-size);
+    line-height: var(--body-text-line-height);
+
+    color: var(--text-color);
 }
