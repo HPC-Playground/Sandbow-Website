@@ -9,7 +9,8 @@ Headings:
 
 */
 
-*{margin:0px;
+*{
+    margin:0px;
     padding:0px;
 }
 :root {
@@ -56,7 +57,7 @@ body{
     background-image: linear-gradient(to right, oklab(36.42% -0.011 -0.14), oklab(57.58% 0.158 0.01));
     color: transparent;
     background-clip: text;
-    filter: blur(100px);
+    filter: blur(30px);
     position: absolute;
 }
 .presentation{
@@ -73,6 +74,7 @@ body{
 .interpretation{
     width: 100%;
     text-align: center;
+    margin-bottom: var(--heading-line-height);
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--heading-size);
@@ -87,7 +89,6 @@ body{
 }
 p{
     width: 800px;
-    margin-top: 3.3rem;
 
     text-align: center;
 
@@ -97,3 +98,24 @@ p{
 
     color: var(--text-color);
 }
+
+/* ===== Scrollbar CSS ===== */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) var(--background-color);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--background-color);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border: 3px none var(--background-color);
+  }
